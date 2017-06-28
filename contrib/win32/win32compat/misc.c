@@ -962,7 +962,8 @@ w32_strerror(int errnum)
 }
 
 char *
-readpassphrase(const char *prompt, char *outBuf, size_t outBufLen, int flags) {
+readpassphrase(const char *prompt, char *outBuf, size_t outBufLen, int flags)
+{
 	int current_index = 0;
 	char ch;
 	wchar_t* wtmp = NULL;
